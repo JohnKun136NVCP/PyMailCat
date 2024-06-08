@@ -1,0 +1,12 @@
+dearpygui==1.11.1
+et-xmlfile==1.1.0
+numpy==1.26.2
+opencv-python==4.9.0.80
+openpyxl==3.1.2
+pandas==2.1.4
+pillow==10.3.0
+pycryptodome==3.19.0
+python-dateutil==2.8.2
+pytz==2023.3.post1
+six==1.16.0
+tzdata==2023.3
