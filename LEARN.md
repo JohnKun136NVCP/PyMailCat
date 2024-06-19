@@ -42,8 +42,10 @@ If you have a any companie and you want to send emails to your costumers, you ca
 
 >[!NOTE]
 >(OPTIONAL) You can upload images or PDF files. (Make sure that both are in the same directory if you choose *Both*).
+
 >[!NOTE]
 >Tab. Important. Choose the *manual* option before typing your token and then select *Google* if it is your SMTP service.
+
 >[!WARNING]
 >Google only admits 1<=100 recipients by email
 
