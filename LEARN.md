@@ -27,8 +27,6 @@ If you have a any companie and you want to send emails to your costumers, you ca
 - Use BCC for recipients
 
 
-## SMTP Services Available
-
 >[!NOTE]
 > For **Gmail acount**. You need two factor authentication and create password app. See more here [sign in with app passwords
 ](https://support.google.com/accounts/answer/185833?hl=en&sjid=2504093778559336064-NC&dark=1).
