@@ -67,6 +67,31 @@ This repository houses a delightful graphical interface for sending emails with 
 
 ![](/img/email_cat-popupbad.png)
 
+## Considerations
+
+>[!NOTE]
+> For **Gmail acount**. You need two factor authentication and create password app. See more here [sign in with app passwords
+](https://support.google.com/accounts/answer/185833?hl=en&sjid=2504093778559336064-NC&dark=1).
+> For **Outlook and Yahoo aconnt**. You will need to use your personal password
+
+>[!WARNING]
+>Choose whether you want to add a recipient manually. However, if you choose a file, the program will open the file browser. Select your TXT or Excel or CSV file (Your column of your email must say 'Email'.)
+
+>[!WARNING]
+>If you choose to write your body manually, it is important that you select the *Manual text* button. You can upload TXT (supports UTF-8) or html (also supports UTF-8) files.
+
+>[!NOTE]
+>(OPTIONAL) You can upload images or PDF files. (Make sure that both are in the same directory if you choose *Both*).
+
+>[!NOTE]
+>Tab. Important. Choose the *manual* option before typing your token and then select *Google* if it is your SMTP service.
+
+>[!WARNING]
+>Google only admits 1<=100 recipients by email
+
+>[!NOTE]
+>Use **upload size** if you upload PDF files, HTML as body or pictures, since emails over 20MB, It won't send. (Size of email must be below 20MB)
+
 
 ## Available on
 - Windows
