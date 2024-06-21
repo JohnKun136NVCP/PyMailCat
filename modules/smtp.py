@@ -146,18 +146,17 @@ class smtpsender:
     def __smtpGet(self):
         #Using regex for search the email domain and return it
         self.domain = re.search(r"@[\w.]+",self.__usermail).group()
-        if self.domain == '@gmail.com':
-            self.__smtpService = 'smtp.gmail.com'
-            return self.__smtpService
-        elif self.domain == '@outlook.com' or self.domain == '@hotmail.com':
-            self.__smtpService = 'smtp-mail.outlook.com'
-            return self.__smtpService
-        elif self.domain == '@yahoo.com':
-            self.__smtpService = 'smtp.mail.yahoo.com'
+        domaindict = {
+            '@gmail.com':'smtp.gmail.com',
+            '@outlook.com':'smtp-mail.outlook.com',
+            '@hotmail.com':'smtp-mail.outlook.com',
+            '@yahoo.com':'smtp.mail.yahoo.com'
+        }
+        if self.domain in domaindict:
+            self.__smtpService = domaindict[self.domain]
             return self.__smtpService
         else:
-            #If the domain doesn't exist then returns to 'localhost'
-            self.__smtpService == 'localhost'
+            self.__smtpService = 'localhost'
             return self.__smtpService
     #Gets the token
     def tokenKey(self):
